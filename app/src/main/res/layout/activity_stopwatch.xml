@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stopwatch"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/image_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/info"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/ClockBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Clock"
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            style="@style/CustomButtonStyle"/>
+
+        <Button
+            android:id="@+id/StopwatchBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Stopwatch"
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            style="@style/CustomButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/Time_txtView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="60dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/StartBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#282A3A"
+                android:text="Start"
+                android:textSize="20dp"
+                app:cornerRadius="@android:dimen/app_icon_size"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ResetBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#282A3A"
+                android:text="Reset"
+                android:textSize="20dp"
+                app:cornerRadius="@android:dimen/app_icon_size"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

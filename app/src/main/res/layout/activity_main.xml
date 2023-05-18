@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/image_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/info"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/ClockBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Clock"
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            style="@style/CustomButtonStyle"/>
+
+        <Button
+            android:id="@+id/StopwatchBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Stopwatch"
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            style="@style/CustomButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <TextClock
+            android:id="@+id/Clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timeZone="Asia/Dhaka"
+            android:text="00 : 00 : 00"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:format12Hour="hh:mm:ss"/>
+        <TextClock
+            android:id="@+id/Clock_AmPm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timeZone="Asia/Dhaka"
+            android:text="am"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:format12Hour="a"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+        <TextClock
+            android:id="@+id/Clock_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timeZone="Asia/Dhaka"
+            android:text="jan 01, 0000"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:format12Hour="MMM dd, yyyy"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

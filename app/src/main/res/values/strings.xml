@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Clock</string>
+
+        <string name="about">
+\nWelcome to <b>Clock</b> App!
+            \n
+\nCreated by Md. Sajjad Hossain, Clock App is a simple yet powerful application designed to provide accurate timekeeping and stopwatch functionality. Whether you need to check the time or track intervals, Clock App has got you covered.
+\n\n<b>About the Creator :</b>
+\n\n<b>Md. Sajjad Hossain</b> is a passionate app developer with a strong interest in creating user-friendly and intuitive applications. With a background in mobile app development and a keen eye for detail, Md. Sajjad Hossain aims to deliver an exceptional user experience through Clock App.
+\n
+\n<b>App Features :</b>
+\n\n- <b>Real-Time Clock :</b> The clock displays the current time based on your device\'s time zone, ensuring accurate and reliable timekeeping.
+\n\n- <b>Stopwatch :</b> Use the built-in stopwatch to track elapsed time with precision. It\'s perfect for timing various activities, workouts, or any event that requires accurate time measurements.
+\n
+\n<b>How it Works :</b>
+\n\n1. Clock : Upon launching the app, the clock will automatically display the current time based on your device\'s time zone. It updates in real-time, so you can always rely on it for accurate time information.
+\n
+\n2. Stopwatch : To access the stopwatch, navigate to the stopwatch section within the app. Tap the "Start" button to begin the timer. Tap "Stop" to pause the timer, and "Reset" to clear the stopwatch and start fresh.
+\n
+\n<b>Support and Feedback :</b>
+\n\nWe value your feedback and strive to make Clock App better with each update. If you encounter any issues, have suggestions for improvements, or need assistance, please don\'t hesitate to reach out.
+\n
+\n<b>Contact Information :</b>
+\n\nEmail : mdsajjadhossain614@gmail.com
+            <!-- - Website: [Your Website URL]-->
+            <!-- - Support Forum: [URL of the Support Forum]-->
+\n
+\nWe appreciate your interest in Clock App and hope it enhances your timekeeping experience. Thank you for choosing Clock App!
+\n
+\n<b>Md. Sajjad Hossain</b></string>
+</resources>
